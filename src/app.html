@@ -1,3 +1,22 @@
 <template>
-  <h1>${message}</h1>
+    <require from="bootstrap/dist/css/bootstrap.css"></require>
+    <require from="./styles.css"></require>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <i class="fa fa-user"></i>
+            <span>Encharta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="container">
+          <div class="row">
+            <div class="col-md-4">List Placeholder</div>
+            <router-view class="col-md-8"></router-view>
+          </div>
+          <h1>${message}</h1>
+        </div>
+      
 </template>
